@@ -7,20 +7,35 @@ import org.junit.jupiter.api.Test;
 
 public class FizzBuzzTestConverterTest {
 
-
+    /* folowing the GWT */
     @Test
     public void shouldReturnFizzWhenGivenMultiple3() {
 
+
         FizzBuzzConverter fizzBuzzConverter = new FizzBuzzConverter();
+
         String result = fizzBuzzConverter.convert(3);
-        assertEquals("Fizz",result);
+
+        assertEquals("Fizz", result);
     }
+
     @Test
     public void shouldReturnBuzzWhenGivenMultiple5() {
+
         FizzBuzzConverter fizzBuzzConverter = new FizzBuzzConverter();
+
         String result = fizzBuzzConverter.convert(5);
-        assertEquals("Buzz",result);
+
+        assertEquals("Buzz", result);
+
+
     }
 
+    @Test
+    public void shouldReturnBuzzWhenGivenMultiple15() {
 
+        FizzBuzzConverter fizzBuzzConverter = new FizzBuzzConverter();
+        String result = fizzBuzzConverter.convert(15);
+        assertEquals("BuzzFizz",result);
+    }
 }
