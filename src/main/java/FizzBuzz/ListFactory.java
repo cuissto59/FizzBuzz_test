@@ -10,7 +10,7 @@ public class ListFactory {
 
     public List<Integer> initiateList(int i) {
 
-        return IntStream.rangeClosed(0, 2)
+        return IntStream.rangeClosed(0, i)
                 .boxed()
                 .collect(Collectors.toList());
 
