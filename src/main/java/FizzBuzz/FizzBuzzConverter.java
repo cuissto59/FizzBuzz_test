@@ -20,7 +20,7 @@ public class FizzBuzzConverter {
         if( i % 3 == 0 ) {
             return "Fizz";
         }
-        return " ";  // will be implemented in next step
+        return String.valueOf(i);
 
     }
 }

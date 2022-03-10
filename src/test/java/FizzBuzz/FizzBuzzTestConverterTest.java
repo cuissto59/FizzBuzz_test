@@ -38,4 +38,12 @@ public class FizzBuzzTestConverterTest {
         String result = fizzBuzzConverter.convert(15);
         assertEquals("BuzzFizz",result);
     }
+
+    @Test
+    public void shouldReturnTheNumberWhenGivenNoneMultipleOF_3_5_7() {
+
+        FizzBuzzConverter fizzBuzzConverter = new FizzBuzzConverter();
+        String result = fizzBuzzConverter.convert(2);
+        assertEquals("2",result);
+    }
 }
