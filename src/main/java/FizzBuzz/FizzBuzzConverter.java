@@ -7,14 +7,20 @@ public class FizzBuzzConverter {
 
 
 
+        // prioriter  à 15  car il est divisible par 5 et 3
 
-        if(i % 3 == 0 && i % 5 != 0){
-            return "Fizz";
+        if(i % 15 == 0){
+            return "BuzzFizz";
         }
-        if(i % 5 == 0 && i % 15 != 0){
+        // on peut cha changer les places entre 5 et 3  ils ont le même ordre de priorité
+
+        if(i % 5 == 0 ){
             return "Buzz";
         }
-        else
-            return "BuzzFizz";
+        if( i % 3 == 0 ) {
+            return "Fizz";
+        }
+        return " ";  // will be implemented in next step
+
     }
 }
