@@ -16,7 +16,6 @@ public class ListFactoryTest {
         ListFactory listFactory = new ListFactory();
         List<Integer> result = listFactory.initiateList(2);
         List<Integer> expect = new ArrayList<>();
-        expect.add(0);
         expect.add(1);
         expect.add(2);
         assertArrayEquals(expect.toArray(),result.toArray());
