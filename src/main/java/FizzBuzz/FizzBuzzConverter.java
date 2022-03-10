@@ -4,6 +4,7 @@ public class FizzBuzzConverter {
 
 
     public String convert(int i) {
-        return "Fizz";
+
+        return (i % 3 == 0) ? "Fizz" :  "Buzz";
     }
 }
