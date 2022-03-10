@@ -12,7 +12,7 @@ public class FizzBuzzConverter {
         if(i % 15 == 0){
             return "BuzzFizz";
         }
-        // on peut cha changer les places entre 5 et 3  ils ont le même ordre de priorité
+        // on peut  changer les places entre 5 et 3 car ils ont le même ordre de priorité
 
         if(i % 5 == 0 ){
             return "Buzz";

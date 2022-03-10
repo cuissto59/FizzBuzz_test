@@ -4,10 +4,13 @@ package FizzBuzz;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class FizzBuzzTestConverterTest {
 
-    /* folowing the GWT */
+    /* following the GWT */
     @Test
     public void shouldReturnFizzWhenGivenMultiple3() {
 
@@ -40,10 +43,13 @@ public class FizzBuzzTestConverterTest {
     }
 
     @Test
-    public void shouldReturnTheNumberWhenGivenNoneMultipleOF_3_5_7() {
+    public void shouldReturnTheExactNumberWhenGivenNoneMultipleOF_3_5_7() {
 
         FizzBuzzConverter fizzBuzzConverter = new FizzBuzzConverter();
         String result = fizzBuzzConverter.convert(2);
         assertEquals("2",result);
     }
+
+
+
 }
